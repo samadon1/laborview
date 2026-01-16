@@ -1,0 +1,60 @@
+PODS:
+  - camera_avfoundation (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - flutter_llama (1.0.0):
+    - Flutter
+  - flutter_onnxruntime (0.0.1):
+    - Flutter
+    - onnxruntime-objc (= 1.22.0)
+  - image_picker_ios (0.0.1):
+    - Flutter
+  - onnxruntime-c (1.22.0)
+  - onnxruntime-objc (1.22.0):
+    - onnxruntime-objc/Core (= 1.22.0)
+  - onnxruntime-objc/Core (1.22.0):
+    - onnxruntime-c (= 1.22.0)
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - camera_avfoundation (from `.symlinks/plugins/camera_avfoundation/ios`)
+  - Flutter (from `Flutter`)
+  - flutter_llama (from `.symlinks/plugins/flutter_llama/ios`)
+  - flutter_onnxruntime (from `.symlinks/plugins/flutter_onnxruntime/ios`)
+  - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+
+SPEC REPOS:
+  trunk:
+    - onnxruntime-c
+    - onnxruntime-objc
+
+EXTERNAL SOURCES:
+  camera_avfoundation:
+    :path: ".symlinks/plugins/camera_avfoundation/ios"
+  Flutter:
+    :path: Flutter
+  flutter_llama:
+    :path: ".symlinks/plugins/flutter_llama/ios"
+  flutter_onnxruntime:
+    :path: ".symlinks/plugins/flutter_onnxruntime/ios"
+  image_picker_ios:
+    :path: ".symlinks/plugins/image_picker_ios/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
+
+SPEC CHECKSUMS:
+  camera_avfoundation: 5675ca25298b6f81fa0a325188e7df62cc217741
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  flutter_llama: dfc4b5aa091321c9838323975bccc820c81f0f7f
+  flutter_onnxruntime: 744f037980e9fb685736bfeceaf4c2dd8c381f8a
+  image_picker_ios: e0ece4aa2a75771a7de3fa735d26d90817041326
+  onnxruntime-c: 7f778680e96145956c0a31945f260321eed2611a
+  onnxruntime-objc: 83d28b87525bd971259a66e153ea32b5d023de19
+  path_provider_foundation: bb55f6dbba17d0dccd6737fe6f7f34fbd0376880
+
+PODFILE CHECKSUM: c0915517eae1a513480956f02c7781054ca94770
+
+COCOAPODS: 1.16.2

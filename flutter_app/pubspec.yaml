@@ -1,0 +1,48 @@
+name: laborview_ai
+description: AI-powered intrapartum ultrasound analysis using MedSigLIP
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ML Inference - using flutter_onnxruntime for ORT 1.22 (supports IR version 10)
+  flutter_onnxruntime: ^1.5.1
+
+  # On-device LLM inference with llama.cpp (direct GGUF support)
+  flutter_llama: ^1.1.2
+
+  # Image handling
+  image: ^4.1.3
+  image_picker: ^1.0.4
+
+  # Camera
+  camera: ^0.10.5+5
+
+  # File system
+  path_provider: ^2.1.1
+  path: ^1.8.3
+
+  # HTTP for model download
+  http: ^1.1.0
+
+  # State management
+  provider: ^6.1.1
+
+  # UI
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/models/

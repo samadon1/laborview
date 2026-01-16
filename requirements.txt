@@ -1,0 +1,33 @@
+# LaborView AI - Dependencies
+# For training on cloud GPU
+
+# Core ML
+torch>=2.0.0
+transformers>=4.40.0
+accelerate>=0.27.0
+
+# Data processing
+pillow>=10.0.0
+numpy>=1.24.0
+albumentations>=1.3.0
+
+# Vision models
+timm>=0.9.0
+
+# Training utilities
+tqdm>=4.65.0
+wandb>=0.16.0
+
+# Hub integration
+huggingface_hub>=0.20.0
+
+# Demo
+gradio>=4.0.0
+matplotlib>=3.7.0
+
+# Edge export (optional)
+# onnx>=1.14.0
+# onnxruntime>=1.15.0
+# coremltools>=7.0.0  # macOS only
+# tensorflow>=2.14.0  # for TFLite
+# onnx-tf>=1.10.0
