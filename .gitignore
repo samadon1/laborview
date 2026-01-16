@@ -45,5 +45,8 @@ flutter_app/pubspec.lock
 # Misc
 *.log
 *.tmp
-.claude/
 exports/
+
+# Claude Code
+.claude/
+CLAUDE.md
