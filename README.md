@@ -17,6 +17,7 @@ LaborView is an end-to-end AI pipeline for labor monitoring, combining:
 | **[MedASR-Ghana](https://huggingface.co/samwell/medasr-ghana)** | Audio | Ghanaian English ASR | 105M |
 | **[LaborView-MedSigLIP](https://huggingface.co/samwell/laborview-medsiglip)** | Vision | Multi-task ultrasound (full) | 400M |
 | **[LaborView-Ultrasound](https://huggingface.co/samwell/laborview-ultrasound)** | Vision | Multi-task ultrasound (edge) | 5.6M |
+| **[MedGemma](https://huggingface.co/google/medgemma-4b-it)** | Text | Clinical interpretation | 4B |
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -41,6 +42,12 @@ LaborView is an end-to-end AI pipeline for labor monitoring, combining:
 │        │                             │                          │
 │        └──────────┬──────────────────┘                          │
 │                   ▼                                             │
+│          ┌───────────────┐                                      │
+│          │   MedGemma    │                                      │
+│          │  (Clinical    │                                      │
+│          │Interpretation)│                                      │
+│          └───────┬───────┘                                      │
+│                  ▼                                              │
 │          ┌───────────────┐                                      │
 │          │   CLINICAL    │                                      │
 │          │    REPORT     │                                      │
