@@ -2,7 +2,7 @@
 
 **Multimodal AI for Intrapartum Care in Resource-Limited Settings**
 
-[![HuggingFace](https://img.shields.io/badge/🤗-Models-yellow)](https://huggingface.co/samwell)
+[![HuggingFace](https://img.shields.io/badge/🤗-Collection-yellow)](https://huggingface.co/collections/samwell/laborview-ai-the-medgemma-impact-challenge)
 [![Demo](https://img.shields.io/badge/🚀-Demo-blue)](https://huggingface.co/spaces/samwell/laborview-demo)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green)](LICENSE)
 
@@ -97,7 +97,7 @@ LaborView performs three tasks simultaneously:
 ### Installation
 
 ```bash
-git clone https://github.com/samwell/laborview
+git clone https://github.com/samadon1/laborview
 cd laborview
 pip install -r requirements.txt
 ```
@@ -315,7 +315,7 @@ Features:
   title = {LaborView AI: Multimodal Pipeline for Intrapartum Care},
   author = {Samuel},
   year = {2024},
-  url = {https://huggingface.co/collections/samwell/laborview-ai}
+  url = {https://huggingface.co/collections/samwell/laborview-ai-the-medgemma-impact-challenge}
 }
 ```
 
