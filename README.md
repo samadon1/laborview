@@ -29,8 +29,7 @@ LaborView is an end-to-end AI pipeline for labor monitoring, combining:
 │      ▼                              ▼                           │
 │  ┌────────────┐              ┌─────────────────┐                │
 │  │  MedASR    │              │   LaborView     │                │
-│  │  Ghana     │              │   (MedSigLIP/   │                │
-│  │            │              │    MobileViT)   │                │
+│  │  Ghana     │              │   (MedSigLIP)   │                │
 │  └─────┬──────┘              └────────┬────────┘                │
 │        │                              │                         │
 │        ▼                              ▼                         │
@@ -117,7 +116,7 @@ import numpy as np
 from PIL import Image
 
 # Load model
-session = ort.InferenceSession("laborview_mobilevit.onnx")
+session = ort.InferenceSession("laborview.onnx")
 
 # Preprocess
 image = Image.open("ultrasound.png").convert("RGB").resize((256, 256))
@@ -176,7 +175,7 @@ laborview/
 │
 ├── export/
 │   ├── export_medsiglip.py   # ONNX export (full model)
-│   ├── export_mobilevit.py   # ONNX export (edge model)
+│   ├── export_edge.py        # ONNX export (edge model)
 │   └── edge_export.py        # CoreML/TFLite export
 │
 ├── demo/
@@ -216,14 +215,13 @@ python training/train_medsiglip.py
 - Epochs: 30 (3 frozen + 27 fine-tuning)
 - Loss: Dice + CE (segmentation), CE (classification), SmoothL1 (regression)
 
-### MobileViT (Edge Model)
+### Edge Model
 
 ```bash
 python training/train.py --edge
 ```
 
 **Config:**
-- Base: `apple/mobilevit-small`
 - Input: 256×256
 - Size: ~21MB ONNX
 
@@ -234,7 +232,7 @@ python training/train.py --edge
 ### ONNX
 
 ```bash
-python export/export_mobilevit.py --checkpoint best.pt --output laborview.onnx
+python export/export_edge.py --checkpoint best.pt --output laborview.onnx
 ```
 
 ### CoreML (iOS)
