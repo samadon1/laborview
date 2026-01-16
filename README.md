@@ -4,6 +4,7 @@
 
 [![HuggingFace](https://img.shields.io/badge/🤗-Collection-yellow)](https://huggingface.co/collections/samwell/laborview-ai-the-medgemma-impact-challenge)
 [![Demo](https://img.shields.io/badge/🚀-Demo-blue)](https://huggingface.co/spaces/samwell/laborview-demo)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black)](https://github.com/samadon1/laborview)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green)](LICENSE)
 
 ---
@@ -275,6 +276,7 @@ Features:
 | MedASR-Ghana | [samwell/medasr-ghana](https://huggingface.co/samwell/medasr-ghana) | Ghanaian English ASR (105M) |
 | LaborView-MedSigLIP | [samwell/laborview-medsiglip](https://huggingface.co/samwell/laborview-medsiglip) | Full multi-task model (400M) |
 | LaborView-Ultrasound | [samwell/laborview-ultrasound](https://huggingface.co/samwell/laborview-ultrasound) | Edge model (5.6M) |
+| MedGemma | [google/medgemma-4b-it](https://huggingface.co/google/medgemma-4b-it) | Clinical interpretation (4B) |
 
 ---
 
@@ -297,7 +299,7 @@ Features:
 ║ centimeters dilated. Good uterine contractions every 3        ║
 ║ minutes. Fetal heart rate 140, reactive.                      ║
 ╠═══════════════════════════════════════════════════════════════╣
-║ RECOMMENDATION                                                ║
+║ RECOMMENDATION (MedGemma)                                     ║
 ║ Labor progressing well. Continue routine monitoring.          ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
@@ -316,10 +318,10 @@ Features:
 ## Citation
 
 ```bibtex
-@software{laborview_2024,
+@software{laborview_2025,
   title = {LaborView AI: Multimodal Pipeline for Intrapartum Care},
-  author = {Samuel},
-  year = {2024},
+  author = {Samuel Donkor},
+  year = {2025},
   url = {https://huggingface.co/collections/samwell/laborview-ai-the-medgemma-impact-challenge}
 }
 ```
@@ -334,11 +336,9 @@ Apache 2.0
 
 ## Acknowledgments
 
-- [HAI-DEF Challenge](https://hai-def.org/) - Dataset
-- [Google MedSigLIP](https://huggingface.co/google/medsiglip-448) - Base encoder
+- [Google MedGemma](https://huggingface.co/google/medgemma-4b-it) - Clinical LLM
+- [Google MedSigLIP](https://huggingface.co/google/medsiglip-448) - Medical vision encoder
 - [AfriSpeech-200](https://huggingface.co/datasets/intronhealth/afrispeech-200) - ASR dataset
-- MedGemma Impact Challenge
+- [HAI-DEF Challenge](https://hai-def.org/) - Ultrasound dataset
 
----
-
-*Built for the MedGemma Impact Challenge — AI for maternal health.*
+*Built for the [MedGemma Impact Challenge](https://cloud.google.com/medgemma-impact-challenge) — AI for maternal health.*
